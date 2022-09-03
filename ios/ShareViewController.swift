@@ -47,7 +47,7 @@ class ShareViewController: SLComposeServiceViewController {
         return
       }
 
-      handlePost(items)
+      handlePost(items, extraData: ["text": textView.text as Any])
     }
 
     override func configurationItems() -> [Any]! {
